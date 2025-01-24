@@ -73,6 +73,8 @@
                         <path>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
+                            <!-- 不知道为啥，这里必须要指定lombok的版本；否则lombok注解会失效-->
+                            <version>${lombok.version}</version>
                         </path>
                     </annotationProcessorPaths>
                 </configuration>
