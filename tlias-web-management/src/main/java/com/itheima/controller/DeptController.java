@@ -18,6 +18,8 @@ public class DeptController {
     @Autowired
     private DeptService deptService;
 
+    //
+
     // 查询全部部门名称
     @GetMapping
     public Result list() {
