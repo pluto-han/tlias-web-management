@@ -14,4 +14,10 @@ public interface EmpService {
      * @return
      */
     PageResult<Emp> page(EmpQueryParam empQueryParam);
+
+    /**
+     * 新增员工信息
+     * @param emp
+     */
+    void save(Emp emp);
 }

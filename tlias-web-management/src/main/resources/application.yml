@@ -11,11 +11,29 @@ spring:
     username: root
     password: 123456
 
+  servlet:
+    multipart:
+      # 单个文件大小
+      max-file-size: 10MB
+      # 最大请求大小
+      max-request-size: 100MB
 
-#mybatis相关配置
+
+# Mybatis相关配置
 mybatis:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
     # 开启驼峰命名开关
     map-underscore-to-camel-case: true
 
+# 配置事务管理日志级别
+logging:
+  level:
+    org.springframework.jdbc.support.JdbcTransactionManager: debug
+
+# 阿里云OSS
+aliyun:
+  oss:
+    endpoint: https://oss-cn-shanghai.aliyuncs.com
+    bucketname: javaweb-pluto-01
+    region: cn-shanghai
